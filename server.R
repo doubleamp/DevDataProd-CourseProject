@@ -39,5 +39,6 @@ shinyServer(
          label_x_pos <- lower_end + (upper_end - lower_end) * label_x
          label_y_pos <- min(interval^fun_power) + (max(interval^fun_power) - min(interval^fun_power)) * label_y
          text(x = label_x_pos, y = label_y_pos, labels = bquote(.(fun_label)))
-   }
-)
+   })
+    
+})
