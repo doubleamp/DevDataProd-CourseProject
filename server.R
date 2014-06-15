@@ -41,6 +41,3 @@ shinyServer(
          text(x = label_x_pos, y = label_y_pos, labels = bquote(.(fun_label)))
    }
 )
-    
-  }
-)
