@@ -8,6 +8,9 @@
 # The app allows the user to represent a power function (with exponent selected by the user) a selected interval
 #
 
+# Library dependencies:
+library(shiny)
+
 # Server function:
 shinyServer(
    function(input, output) {
