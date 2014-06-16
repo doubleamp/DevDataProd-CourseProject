@@ -20,13 +20,14 @@ shinyUI(pageWithSidebar(
       h4("Help on using the app"),
       p("In the 'Main Inputs' section, select the order 'N' of the power function 'y = x^N' to be plotted, and then the interval in which to plot the function."),
       p("In the 'Minor plot adjustments' section, select the color of the plot and the position of the label presenting the function being plotted."),
+      p(helpText(a("For more info, click here", href="http://htmlpreview.github.io/?https://github.com/doubleamp/DevDataProd-CourseProjectDoc/master/blob/index.html"), target="_blank")),
       # Main inputs for the representation:
       h4("Main inputs"),
       numericInput('fun_power', label ="Select the power of the function:", value = 2, min = -25, max = 25, step = 1),
       sliderInput('int_ini', label = "Select the interval initial value:", value = -5, min = -100, max = 100, step = 1),
       sliderInput('int_end', label = "Select the interval end value:", value = 5, min = -100, max = 100, step = 1),
       # Additional controls for the representation:
-   h4("Minor plot adjustments"),
+      h4("Minor plot adjustments"),
       radioButtons('fun_color', label = "Select the color of the plot:",
                    choices = c("Black" = "black", "Green" = "green", "Blue" = "blue"), selected = "green"),
       sliderInput('lab_x', label = "Select the X position of the label:", value = 0.2, min = 0.0, max = 1, step = 0.05, format = "#%"),
